@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    background: rgb(238, 95, 195);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #111;
+}
+
+.showcase h1{
+    font-size: 2.2rem;
+}
+
+header{
+    background: rgba(27, 203, 219, 0.329);
+    max-width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid #222;
+    border-radius: 20px;
+    border-bottom: rgb(109, 6, 168) 10px solid;
+}
+
+#lyrics{
+    border: #333 dashed 2px;
+}
+
+#lyrics h3{
+    font-size: 1.6rem;
+}
+
+.lang-butt{
+    margin-top: 20px;
+    padding: 9px 10px;
+    background: #fcecfc; /* Old browsers */
+    background: -moz-linear-gradient(top, #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=0 ); /* IE6-9 */
+}
+
+.lang-butt:hover{
+    background: #f9c2f9; /* Old browsers */
+    background: -moz-linear-gradient(top, #f9c2f9 0%, #fba6e1 50%, #fc6ccc 51%, #ff21bc 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f9c2f9 0%,#fba6e1 50%,#fc6ccc 51%,#ff21bc 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f9c2f9 0%,#fba6e1 50%,#fc6ccc 51%,#ff21bc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c2f9', endColorstr='#ff21bc',GradientType=0 ); /* IE6-9 */
+}
+
+.active-button{
+    background: #f4e8f7; /* Old browsers */
+    background: -moz-linear-gradient(top, #f4e8f7 0%, #fba6e1 50%, #ef6eef 51%, #c94cf7 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f4e8f7 0%,#fba6e1 50%,#ef6eef 51%,#c94cf7 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f4e8f7 0%,#fba6e1 50%,#ef6eef 51%,#c94cf7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4e8f7', endColorstr='#c94cf7',GradientType=0 ); /* IE6-9 */
+}
+
+
+#english{
+    display: none;
+}
+
+#japanese{
+    display: none;
+}
+
+#romanji{
+    display: none;
+}
+
+header h1{
+    font-size: 6rem;
+    margin: 10px;
+    padding: 10px;
+}
+
+header a{
+    padding: 0 10px;
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: rgba(90, 2, 117, 0.507);
+}
+
+header a:hover{
+    color: rgb(90, 2, 117);
+}
+
+header a:active{
+    color: rgb(149, 12, 131);
+}
+
+.links{
+    margin-bottom: 10px;
+}
+
+
+.showcase iframe{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 10px;
+
+    border: #111 solid 2px;
+}
+
+.showcase h1{
+    border: #111 solid 1px;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #a13b83a2;
+}
+
+.content{
+    padding: 20px;
+    border: #333 dashed 2px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+.grid-2{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+}
+
+.grid-3{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr)
+}
+
+#Awoo-1 img{
+    width: 500px;
+}
+
+#grid-3 img{
+    height: 100px;
+}
+
+@media(max-width: 1200px){
+    .grid-2,.grid-3{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+
+    #slideshow{
+        width: 70%;
+    }
+}
+
+@media(max-width: 640px){
+    .content{
+        border: none;
+    }
+    
+}
+
+@media(max-width: 580px){
+    .content{
+        border: none;
+    }
+    header a{
+        font-size: 2rem;
+        overflow: auto;
+    }
+
+    #Awoo-1 img{
+        width:250px ;
+    }
+
+    header h1{
+        font-size: 3rem;
+    }
+}
+
